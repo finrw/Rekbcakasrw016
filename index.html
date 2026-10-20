@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Error - Pembayaran Diperlukan</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f4f6f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      max-width: 450px;
+      width: 100%;
+      padding: 32px 24px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      border-top: 5px solid #e53e3e;
+    }
+
+    .icon-container {
+      width: 64px;
+      height: 64px;
+      background-color: #fff5f5;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto 20px;
+    }
+
+    .icon-container svg {
+      width: 36px;
+      height: 36px;
+      fill: #e53e3e;
+    }
+
+    .status-badge {
+      display: inline-block;
+      background-color: #fed7d7;
+      color: #9b2c2c;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    h1 {
+      color: #2d3748;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #718096;
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    .error-box {
+      background-color: #f7fafc;
+      border: 1px dashed #cbd5e0;
+      border-radius: 6px;
+      padding: 10px;
+      font-family: monospace;
+      font-size: 13px;
+      color: #e53e3e;
+      margin-bottom: 24px;
+    }
+
+    .btn-pay {
+      display: block;
+      width: 100%;
+      background-color: #3182ce;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 12px 0;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 15px;
+      transition: background-color 0.2s ease;
+    }
+
+    .btn-pay:hover {
+      background-color: #2b6cb0;
+    }
+
+    .footer-text {
+      margin-top: 16px;
+      font-size: 12px;
+      color: #a0aec0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="icon-container">
+      <!-- Icon Peringatan Exclamation / Error -->
+      <svg viewBox="0 0 24 24">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+      </svg>
+    </div>
+
+    <span class="status-badge">402 Payment Required</span>
+
+    <h1>Layanan API Terhenti</h1>
+    
+    <p>Akses ke API telah ditangguhkan karena tagihan langganan Anda belum terbayar. Silakan lakukan pembayaran untuk mengaktifkan kembali layanan ini.</p>
+
+    <div class="error-box">
+      HTTP Status: 402 - Billing Exceeded / Unpaid
+    </div>
+
+    <a href="#" class="btn-pay">Bayar Tagihan Sekarang</a>
+
+    <div class="footer-text">
+      Butuh bantuan? Hubungi tim dukungan pelanggan kami.
+    </div>
+  </div>
+
+</body>
+</html>
+
